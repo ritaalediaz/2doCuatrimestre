@@ -1,0 +1,32 @@
+body {
+  background:linear-gradient(to right, #9664bb, #6f37a4, #95289b, #fe7098, #f973d2);
+  border: 5px solid rgb(255, 255, 255);
+}
+
+h1{
+  color:black;
+  text-decoration:underline;
+  text-align: center;
+ 
+  
+}
+
+.contenedor {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 30px;
+  justify-content: center;
+}
+
+
+.producto {
+  border: 1px solid #ddd;
+  padding: 15px;
+  max-width: 250px; 
+}
+
+
+.imagen {
+  max-width: 100%; 
+  height: auto;
+}
