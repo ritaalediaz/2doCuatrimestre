@@ -8,15 +8,17 @@
 import { Vehiculo } from "./Vehiculo";
 
 export class RegistroAutomotor {
-    private listaVehiculo: Vehiculo[]; // Inicializa array 
-    estaAgregado: any;
-    vehiculo: any;
-
-    constructor() {
+    public Vehiculo!: string;
+    public listaVehiculo: Vehiculo[]; // Inicializa array 
+    estaAgregado: boolean = false;
+    
+    constructor(vehiculo: string) {
+        this.Vehiculo = vehiculo;
         this.listaVehiculo = [];
     }
 
     // Agregar vehículo
+    
     agregarVehiculo(vehiculo: Vehiculo) {
         this.listaVehiculo.push(vehiculo);
     }
@@ -26,15 +28,18 @@ export class RegistroAutomotor {
         return this.listaVehiculo; // Devuelve la lista de vehículos
     }
 
+
     // Getters
     public getListaVehiculo(): Vehiculo[] {
         return this.listaVehiculo; // Retorna la lista de vehículos
     }
 
+
     // Setters
     public setListaVehiculo(listaVehiculo: Vehiculo[]): void {
         this.listaVehiculo = listaVehiculo;
     }
+
 
     // Eliminar vehículo
     public eliminarVehiculo(vehiculoAEliminar: Vehiculo): void {
@@ -49,13 +54,15 @@ export class RegistroAutomotor {
 
 
 
-  /*  // Modificar un vehiculo.
+  // Modificar un vehiculo.
 
-public modificarVehiculo(Vehiculo: string): void {
-    if (this.estaAgregado)
-    this.vehiculo.modificarVehiculo(Vehiculo);
-    }
-    public vehiculoModificado(): string {
-    return this.vehiculo.vehiculoModificado();
-    }*/
-}
+  public modificarVehiculo(vehiculo:Vehiculo):void{
+             for (let i = 0; i < this.listaVehiculo.length; i++) {
+               this.listaVehiculo[i].setlistaVehiculo(this.listaVehiculo);
+               
+            }
+             vehiculo.setlistaVehiculo(this.listaVehiculo);            
+              
+          
+            }
+        }
