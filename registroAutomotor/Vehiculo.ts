@@ -1,4 +1,10 @@
 export class Vehiculo {
+    static getModelo() {
+        throw new Error("Method not implemented.");
+    }
+    setlistaVehiculo(listaVehiculo: Vehiculo[]) {
+        throw new Error("Method not implemented.");
+    }
     private marca: string;
     private modelo: string;
     private tipo: string;

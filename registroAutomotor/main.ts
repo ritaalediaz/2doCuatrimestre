@@ -1,15 +1,16 @@
-//import * as readline from "readline-sync";
+
 
 import { Vehiculo } from "./Vehiculo";
 
 import { RegistroAutomotor } from "./RegistroAutomotor";
 
-let registro = new RegistroAutomotor();
+let registro = new RegistroAutomotor("Ford");
 
 let ford: Vehiculo = new Vehiculo("Ford ", "Ka", "Automotor", "Privado");
 let motomel: Vehiculo = new Vehiculo("Gilera", "Smash", "Motocicleta","Privado");
-let siena: Vehiculo = new Vehiculo("Fiat", "Siena", "Vehículo familiar y urbano", "Sedán");
+let siena: Vehiculo = new Vehiculo("Fiat", "Siena", "Vehículo familiar ", "Privado");
 let scania: Vehiculo = new Vehiculo("Scania", "R 450", "Transporte de carga pesada", "Camión de larga distancia");
+
 
 // Agregar vehículos al registro
 registro.agregarVehiculo(ford);
@@ -21,32 +22,30 @@ registro.agregarVehiculo(scania);
 console.log("Lista de vehículos en el registro:");
 console.log(registro.getListaVehiculo()); // Llama al método para obtener la lista de vehículos.
 
+
+
 // Eliminar vehiculo.
 
 registro.eliminarVehiculo(ford);
-
 console.log("El vehículo eliminado es: " , ford);
-
 console.log(" Vehículo eliminado con exito ");
 console.log(registro.getListaVehiculo());
 
-// Vehiculo nuevo.
-let fitito: Vehiculo = new Vehiculo("fitito", "m83", "Transporte para pequeños ", " corta distancia");
-registro.agregarVehiculo( fitito);
 
+// Vehiculo nuevo.
+let fitito: Vehiculo = new Vehiculo("fitito", "m83", "Transporte pequeño ", " corta distancia");
+registro.agregarVehiculo( fitito);
 
 console.log("El vehículo agregado es: " );
 
-// Ingreso de un vehiculo por el usuario.
-// let marca: string = rls.question("Ingrese la marca del vehículo: ");
-// let modelo: string = rls.question("Ingrese el modelo del vehículo: ");
-// let tipo: string = rls.question("Ingrese el tipo del vehículo: ");
-// let uso: string = rls.question("Ingrese el uso del vehículo: ");
-
-// let nuevoVehiculo: Vehiculo = new Vehiculo(marca, modelo, tipo, uso);
-
-// Agregar el nuevo vehículo al registro
-//registro.agregarVehiculo(nuevoVehiculo);
-
 console.log("Vehículo agregado:");
 console.log(registro.getListaVehiculo());
+
+
+
+//Modificar vehiculo.
+registro.modificarVehiculo(fitito);
+console.log("Se cambio de modelo a: "+ Vehiculo.getModelo());
+console.log("Vehiculo modificado") ;
+console.log(registro.getListaVehiculo());                                                              
+            
