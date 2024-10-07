@@ -29,20 +29,20 @@ export class Camion{
     }
     // setters
     setMarca(nombre: string):string{
-        nombre= "mercedes benz 1114";
+        nombre= "Mercedes Benz 1218";
         return nombre;
     }
     setModelo(numero: number):number{
-        numero = 1980;
+        numero = 1997;
         return numero;
     }
     setPatente(numero: number, letras: string, nacionalidad: string):void{
-        numero= 456;
-        letras= "VHM";
-        nacionalidad= "Argentina";
+        numero= 189;
+        letras= "RYM";
+        nacionalidad= "Alemania";
     }
 }
 // instancias
-let patente= new Patente(456, "VHM", "Argentina");
-const miCamion =new Camion( "1114", "mercedes benz", 1980, patente);
+let patente= new Patente(189, "RYM", "Alemania");
+const miCamion =new Camion( "1218", "Mercedes Benz", 1997, patente);
 console.log(miCamion);

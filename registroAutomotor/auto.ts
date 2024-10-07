@@ -27,20 +27,20 @@ export class Auto {
     }
     // SETTERS
     setMarca(nombre: string): string {
-        nombre = "bmw";
+        nombre = "Ford";
         return nombre;
     }
     setMoldelo(numero: number): number {
-        numero = 1986;
+        numero = 2004;
         return numero;
     }
     setPatente(numero: number, letras: string, nacionalidad: string): void {
-        numero = 789;
-        letras = "IGV";
-        nacionalidad = "Alemania";
+        numero = 499;
+        letras = "EJS";
+        nacionalidad = "Brasil";
     }
 }
 // instancias
-let patente = new Patente(789, "IGV", "Alemania")
-const miAuto = new Auto("m3","bmw", 1986, patente);
+let patente = new Patente(499, "EJS", "Brasil")
+const miAuto = new Auto("Ka","Ford", 2004, patente);
 console.log(miAuto);

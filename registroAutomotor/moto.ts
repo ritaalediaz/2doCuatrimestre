@@ -28,7 +28,7 @@ export class Moto {
     }
     // setters
     setMarca(nombre: string): string {
-        nombre = "yamaha mt03";
+        nombre = "Motomel";
         return nombre;
     }
     setModelo(numero: number): number {
@@ -37,11 +37,11 @@ export class Moto {
     }
     setPantente(numero: number, letras: string, nacionalidad: string): void {
         numero = 123;
-        letras = "MIM";
-        nacionalidad = "Brasil";
+        letras = "JMS";
+        nacionalidad = "Argentina";
     }
 }
 // instancias
-let patente = new Patente(123, "MIM", "Brasil");
-const miMoto = new Moto("mt03", "yamaha", 2017, patente);
+let patente = new Patente(123, "JMS", "Argentina");
+const miMoto = new Moto("Skua", "Motomel", 2017, patente);
 console.log(miMoto);
