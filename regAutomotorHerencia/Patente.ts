@@ -10,10 +10,10 @@ export class Patente{
   
     }
     // getters
-    getNumero():number{
+   public getNumero():number{
         return this.numero;
     }
-    getLetra():string{
+    public getLetra():string{
         return this.letra;
     }
    
