@@ -11,7 +11,7 @@ import{ Camion } from "./camion";
 
 export class  RegistroAutomotor {
    
-    private listaVehiculo: Vehiculo[]; // Inicializa array  
+    public listaVehiculo: Vehiculo[]; // Inicializa array  
     
     constructor() {
       this.listaVehiculo = [];
