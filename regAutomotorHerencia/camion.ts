@@ -17,17 +17,17 @@ export class Camion extends Vehiculo{
       
 }
 
-getEjes(){
+public getEjes(){
     return this.ejes;   
     }
-    setEjes(ejes:number){
+    public setEjes(ejes:number){
         this.ejes= ejes;   
         }
 
-getCarga(){
+public getCarga(){
     return this.carga;   
     }
-    setCarga(carga:number){
+    public setCarga(carga:number){
         this.carga= carga;   
         } 
 
