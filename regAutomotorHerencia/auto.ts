@@ -1,6 +1,6 @@
 import {Vehiculo} from "./vehiculos"
 
-const puertasAuto=2; // INICIO EL CONTEO CON DOS PUERTAS QUE ES LO MINIMO 
+const puertasAuto=3; // INICIO EL CONTEO CON TRES PUERTAS QUE ES LO MINIMO 
 
 export class Auto extends Vehiculo{
 

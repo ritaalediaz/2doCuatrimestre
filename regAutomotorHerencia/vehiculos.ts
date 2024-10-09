@@ -1,8 +1,12 @@
+
+import { Moto } from "./moto";
+
 export class Vehiculo {
     protected marca: string;
     protected modelo: string;
     protected anio: number;
     protected color: string;
+  
 
 
     constructor (marca: string, modelo: string, anio: number, color: string){
@@ -10,6 +14,7 @@ export class Vehiculo {
         this.modelo=modelo;
         this.anio= anio;
         this.color= color;
+       
         
     }
 
@@ -29,7 +34,10 @@ public getAnio(): number {
 
 public getColor(): string {
     return this.color;
+
 } 
+
+
 
 
 // Setters
@@ -48,4 +56,8 @@ public setAnio(anio: number): void {
 public setColor(color: string): void {
     this.color= color; 
 }
+
+
+
+
 }
