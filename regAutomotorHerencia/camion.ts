@@ -17,6 +17,20 @@ export class Camion extends Vehiculo{
       
 }
 
+getEjes(){
+    return this.ejes;   
+    }
+    setEjes(ejes:number){
+        this.ejes= ejes;   
+        }
+
+getCarga(){
+    return this.carga;   
+    }
+    setCarga(carga:number){
+        this.carga= carga;   
+        } 
+
 }
     
     
