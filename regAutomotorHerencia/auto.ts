@@ -11,11 +11,11 @@ export class Auto extends Vehiculo{
     this.puertas= puertasAuto;
       
 }
-getPuertas(){
+public getPuertas(){
     return this.puertas;        
     }   
 
-setPuertas(puertas:number){
+public setPuertas(puertas:number){
     this.puertas= puertas;        
     }   
 

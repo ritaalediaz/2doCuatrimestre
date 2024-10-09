@@ -13,11 +13,11 @@ export class Moto extends Vehiculo{
     this.cilindrada= cilindrada;
       
 }
-getCilindrada(){
+public getCilindrada(){
     return this.cilindrada;        
     }   
 
-    setCilindrada(cilindrada:number){
+    public setCilindrada(cilindrada:number){
         this.cilindrada= cilindrada;        
         }
 }
