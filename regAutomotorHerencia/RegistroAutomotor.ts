@@ -19,7 +19,7 @@ export class  RegistroAutomotor {
 
     // Agregar vehículo
 
-    agregarVehiculo(vehiculo: Moto) {
+    public agregarVehiculo(vehiculo: Moto) {
         this.listaVehiculo.push(vehiculo);
       }
       
