@@ -11,15 +11,14 @@ import{ Camion } from "./camion";
 
 export class  RegistroAutomotor {
    
-    public listaVehiculo: Vehiculo[]; // Inicializa array  
+    private listaVehiculo: Vehiculo[]; // Inicializa array  
     
     constructor() {
       this.listaVehiculo = [];
     }
 
     // Agregar vehículo
-
-    public agregarVehiculo(vehiculo: Moto) {
+public agregarVehiculo(vehiculo: Moto) {
         this.listaVehiculo.push(vehiculo);
       }
       
