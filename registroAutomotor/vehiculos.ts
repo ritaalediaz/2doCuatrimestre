@@ -1,17 +1,15 @@
-
-export class Vehiculos {
-    
-    protected marca: string;
-    protected modelo: string;
-    protected anio: number;
-    protected color: string;
+export class Vehiculo {
+    private marca: string;
+    private modelo: string;
+    private tipo: string;
+    private uso: string;
 
 
-    constructor (marca: string, modelo: string, anio: number, color: string){
+    constructor (marca: string, modelo: string, tipo: string, uso: string){
         this.marca=marca;
         this.modelo=modelo;
-        this.anio= anio;
-        this.color= color;
+        this.tipo= tipo;
+        this.uso= uso;
         
     }
 
@@ -25,12 +23,12 @@ public getModelo(): string {
     return this.modelo; 
 }
 
-public getAnio(): number { 
-    return this.anio; 
+public getTipo(): string { 
+    return this.tipo; 
 }
 
-public getColor(): string {
-    return this.color;
+public getUso(): string {
+    return this.uso;
 } 
 
 
@@ -43,13 +41,11 @@ public setModelo(modelo: string): void {
     this.modelo = modelo; 
 }
 
-public setAnio(anio: number): void {
-    this.anio = anio; 
+public setTipo(tipo: string): void {
+    this.tipo = tipo; 
 }
 
-public setColor(color: string): void {
-    this.color= color; 
+public setUso(uso: string): void {
+    this.uso = uso; 
 }
 }
-
-

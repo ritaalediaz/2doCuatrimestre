@@ -1,6 +1,6 @@
 
 import * as rls from 'readline-sync';
-import { RegistroAutomotor } from "./registroAutomotor";
+import { RegistroAutomotor } from "./RegistroAutomotor";
 import {Auto} from "./auto";
 import { Moto } from "./moto";
 import { Camion } from "./camion";

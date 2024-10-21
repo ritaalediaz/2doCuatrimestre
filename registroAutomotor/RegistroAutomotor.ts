@@ -5,7 +5,7 @@
 // • incorporando los conceptos nuevos:
 // • Encapsulamiento y composicion.
 
-import { Vehiculos } from "./vehiculos";
+import { Vehiculo } from "./vehiculos";
 import { Auto } from "./auto";
 import { Moto } from "./moto";
 import { Camion } from "./camion";
@@ -13,7 +13,7 @@ import { Camion } from "./camion";
 
 export class  RegistroAutomotor {
    
-    private listaVehiculo: Vehiculos[]; // Inicializa array  
+    private listaVehiculo: Vehiculo[]; // Inicializa array  
     
     constructor() {
       this.listaVehiculo = [];
@@ -28,22 +28,22 @@ export class  RegistroAutomotor {
  
 
     // Obtener la lista de vehículos
-    public getRegistroAutomotor(): Vehiculos[] {
+    public getRegistroAutomotor(): Vehiculo[] {
         return this.listaVehiculo; // Devuelve la lista de vehículos
     }
 
     // Getters
-    public getListaVehiculo(): Vehiculos[] {
+    public getListaVehiculo(): Vehiculo[] {
         return this.listaVehiculo; // Retorna la lista de vehículos
     }
 
     // Setters
-    public setListaVehiculo(listaVehiculo: Vehiculos[]): void {
+    public setListaVehiculo(listaVehiculo: Vehiculo[]): void {
         this.listaVehiculo = listaVehiculo;
     }
 
     // Eliminar vehículo
-    public eliminarVehiculo(vehiculoAEliminar: Vehiculos): void {
+    public eliminarVehiculo(vehiculoAEliminar: Vehiculo): void {
         // Verificar si el vehículo existe en la lista
         if (vehiculoAEliminar !== undefined && this.listaVehiculo.includes(vehiculoAEliminar)) {
             const posVehiculo: number = this.listaVehiculo.indexOf(vehiculoAEliminar);
@@ -53,15 +53,13 @@ export class  RegistroAutomotor {
         }
     }
 
+// Modificar un vehiculo.
 
-
-    // Modificar un vehiculo.
-
-    public modificarVehiculo(vehiculo:Vehiculos, marca?:string, modelo?:string,anio?:number, color?:string){
+ public modificarVehiculo(vehiculo:Vehiculo, marca?:string, modelo?:string,anio?:number, color?:string){
         // IF (variable) asegura que este 
         if(marca) vehiculo.setMarca(marca);
         if(modelo) vehiculo.setModelo(modelo);
-        if(anio) vehiculo.setAnio(anio);
+        if(anio) vehiculo.setAnio(anio);            
         if(color) vehiculo.setColor(color);
        
         return "Vehículo modificado exitosamente";
