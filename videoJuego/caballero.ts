@@ -1,11 +1,6 @@
 import { Personajes } from "./personajes";
-
-
-
-
 export class caballero extends Personajes {
     
-  
     private ataqueEspada: number;
     private defEescudo: string;
     public constructor(nombre: string, nivel: number = 1, habilidades: string,vida:100,fuerza:number,ataqueEspada:number, escudo:string) {

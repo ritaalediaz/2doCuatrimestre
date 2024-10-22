@@ -49,8 +49,8 @@ export abstract class Personajes {
         this.fuerza=fuerza;
     }
  //metodos
-public atacarOponente():void{
-    return console.log("ataca al oponente");
+public atacarEnemigo():void{
+    return console.log("ataca al adversario");
  }
 public defenderse():void{
     return console.log("se esta defendiendo del enemigo")
