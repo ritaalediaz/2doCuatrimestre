@@ -15,24 +15,26 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.mago = void 0;
-var personajes_1 = require("./Personajes");
-//  const defVarita= "hsjsjs";
-var mago = /** @class */ (function (_super) {
-    __extends(mago, _super);
-    function mago(nombre, nivel, habilidades, vida, fuerza, cantidadHechizos, defVarita) {
+exports.Mago = void 0;
+var Personajes_1 = require("./Personajes");
+var Mago = /** @class */ (function (_super) {
+    __extends(Mago, _super);
+    function Mago(nombre, nivel, habilidades, vida, fuerza, cantidadHechizos, defVarita) {
         if (nivel === void 0) { nivel = 1; }
         var _this = _super.call(this, nombre, nivel, habilidades, vida, fuerza) || this;
         _this.cantidadHechizos = 5;
         _this.defVarita = "Convierte en sapo";
         return _this;
     }
-    mago.prototype.atacar = function () {
+    Mago.prototype.atacar = function () {
         console.log("".concat(this.nombre, " lanza ").concat(this.cantidadHechizos, "  a Conan y causa ").concat(this.fuerza, " da\u00F1o"));
     };
-    mago.prototype.defender = function () {
+    Mago.prototype.defender = function () {
         console.log("".concat(this.nombre, " se protege con su magia."));
     };
-    return mago;
-}(personajes_1.Personajes));
-exports.mago = mago;
+    Mago.prototype.evolucionar = function () {
+        console.log("".concat(this.nombre, " evoluciona a Mago Legendario."));
+    };
+    return Mago;
+}(Personajes_1.Personajes));
+exports.Mago = Mago;

@@ -12,7 +12,6 @@ export class Caballero extends Personajes {
     public atacar(): void {
         console.log(`${this.nombre} ataca con ${this.ataqueEspada} a El Mago Gandalf y causa ${this.fuerza} de daño`);
      }
-      
     //Defender 
     public defender(): void {
         console.log(`${this.nombre} se protege con su escudo potente.`);

@@ -1,4 +1,15 @@
 "use strict";
+/* un sistema de personajes de un videojuego RPG utilizando herencia y polimorfismo. Los personajes tendrán
+características y habilidades únicas, y algunos podrán evolucionar a versiones mejoradas con nuevas habilidades.
+Ejercicio videojuego
+Ejemplo de clase base personaje
+El personaje debe tener atributos ej:nombre (string): El nombre del personaje.
+nivel (number): El nivel del personaje (empieza en 1).
+puntosDeVida (number): Los puntos de vida del personaje.
+Métodos ej:
+atacar(): Imprime un mensaje indicando que el personaje está atacando.
+defender(): Imprime un mensaje indicando que el personaje está defendiendo.
+Ejercicio videojuego*/
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Personajes = void 0;
 var Personajes = /** @class */ (function () {
@@ -47,11 +58,14 @@ var Personajes = /** @class */ (function () {
         this.fuerza = fuerza;
     };
     //metodos
-    Personajes.prototype.atacarOponente = function () {
-        return console.log("ataca al oponente");
+    Personajes.prototype.atacarEnemigo = function () {
+        return console.log("ataca al adversario");
     };
     Personajes.prototype.defenderse = function () {
         return console.log("se esta defendiendo del enemigo");
+    };
+    Personajes.prototype.evolucionar = function () {
+        return console.log("evolucion del personaje");
     };
     return Personajes;
 }());
