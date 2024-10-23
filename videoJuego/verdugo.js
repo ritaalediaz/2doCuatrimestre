@@ -15,23 +15,23 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.verdugo = void 0;
-var personajes_1 = require("./Personajes");
-var verdugo = /** @class */ (function (_super) {
-    __extends(verdugo, _super);
-    function verdugo(nombre, nivel, habilidades, vida, fuerza, elementosTortura, hachaDeVerdugo) {
+exports.Verdugo = void 0;
+var Personajes_1 = require("./Personajes");
+var Verdugo = /** @class */ (function (_super) {
+    __extends(Verdugo, _super);
+    function Verdugo(nombre, nivel, habilidades, vida, fuerza, elementosTortura, hachaDeVerdugo) {
         if (nivel === void 0) { nivel = 1; }
         var _this = _super.call(this, nombre, nivel, habilidades, vida, fuerza) || this;
         _this.elementosTortura = 5;
         _this.hachaDeVerdugo = "hacha de verdugo";
         return _this;
     }
-    verdugo.prototype.atacar = function () {
+    Verdugo.prototype.atacar = function () {
         console.log("".concat(this.nombre, " ataca con elementos de tortura ").concat(this.elementosTortura, " al caballero Conan y causa ").concat(this.fuerza, " de da\u00F1o"));
     };
-    verdugo.prototype.defender = function () {
+    Verdugo.prototype.defender = function () {
         console.log("".concat(this.nombre, " se defendi\u00F3 con su hacha de verdugo."));
     };
-    return verdugo;
-}(personajes_1.Personajes));
-exports.verdugo = verdugo;
+    return Verdugo;
+}(Personajes_1.Personajes));
+exports.Verdugo = Verdugo;

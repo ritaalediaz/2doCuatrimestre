@@ -16,22 +16,22 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Ladydi = void 0;
-var personajes_1 = require("./Personajes");
-var ladydi = /** @class */ (function (_super) {
-    __extends(ladydi, _super);
-    function ladydi(nombre, nivel, habilidades, vida, fuerza, cantoDeSirena, danceFeghting) {
+var Personajes_1 = require("./Personajes");
+var Ladydi = /** @class */ (function (_super) {
+    __extends(Ladydi, _super);
+    function Ladydi(nombre, nivel, habilidades, vida, fuerza, cantoDeSirena, danceFeghting) {
         if (nivel === void 0) { nivel = 1; }
         var _this = _super.call(this, nombre, nivel, habilidades, vida, fuerza) || this;
         _this.cantoDeSirena = 7;
         _this.danceFeghting = "baile de lucha";
         return _this;
     }
-    ladydi.prototype.atacar = function () {
+    Ladydi.prototype.atacar = function () {
         console.log("".concat(this.nombre, " lanza ").concat(this.cantoDeSirena, "  a Verdugo y causa ").concat(this.fuerza, " de da\u00F1o"));
     };
-    ladydi.prototype.defender = function () {
+    Ladydi.prototype.defender = function () {
         console.log("".concat(this.nombre, " se protege con baile de lucha."));
     };
-    return ladydi;
-}(personajes_1.Personajes));
-exports.ladydi = ladydi;
+    return Ladydi;
+}(Personajes_1.Personajes));
+exports.Ladydi = Ladydi;

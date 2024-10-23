@@ -7,7 +7,7 @@ import { Personajes } from "./Personajes";
  public constructor(nombre: string, nivel: number = 1, habilidades: string,vida:100,fuerza:number, cantidadHechizos: number, defVarita: string) {
         super(nombre, nivel, habilidades,vida,fuerza);
          this.cantidadHechizos = 5;
-        this.defVarita= "Convierte en sapo"
+         this.defVarita= "Convierte en sapo"
     }
    public atacar(): void {
       console.log(`${this.nombre} lanza ${this.cantidadHechizos}  a Conan y causa ${this.fuerza} daño`);

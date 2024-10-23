@@ -4,10 +4,10 @@ export class Juego {
     public constructor() {
       this.personajes = [];
     }
-    agregarPersonaje(personaje: Personajes): void {
+    public agregarPersonaje(personaje: Personajes): void {
       this.personajes.push(personaje);
     }
-    iniciarJuego(): void {
+    public  iniciarJuego(): void {
       this.personajes.forEach((personaje) => {
         personaje.atacar();
         personaje.defender();

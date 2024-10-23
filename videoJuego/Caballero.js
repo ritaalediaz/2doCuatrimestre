@@ -16,7 +16,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Caballero = void 0;
-var personajes_1 = require("./Personajes");
+var Personajes_1 = require("./Personajes");
 var Caballero = /** @class */ (function (_super) {
     __extends(Caballero, _super);
     function Caballero(nombre, nivel, habilidades, vida, fuerza, ataqueEspada, escudo) {
@@ -27,19 +27,19 @@ var Caballero = /** @class */ (function (_super) {
         return _this;
     }
     // Atacar
-    caballero.prototype.atacar = function () {
+    Caballero.prototype.atacar = function () {
         console.log("".concat(this.nombre, " ataca con ").concat(this.ataqueEspada, " a El Mago Gandalf y causa ").concat(this.fuerza, " de da\u00F1o"));
     };
     //Defender 
-    caballero.prototype.defender = function () {
+    Caballero.prototype.defender = function () {
         console.log("".concat(this.nombre, " se protege con su escudo potente."));
     };
-    caballero.prototype.getdefEescudo = function () {
+    Caballero.prototype.getdefEescudo = function () {
         return this.defEescudo;
     };
-    caballero.prototype.setdefEescudo = function (def) {
+    Caballero.prototype.setdefEescudo = function (def) {
         this.defEescudo = def;
     };
-    return caballero;
-}(personajes_1.Personajes));
-exports.caballero = caballero;
+    return Caballero;
+}(Personajes_1.Personajes));
+exports.Caballero = Caballero;
