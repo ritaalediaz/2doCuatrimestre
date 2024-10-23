@@ -15,8 +15,8 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ladydi = void 0;
-var personajes_1 = require("./personajes");
+exports.Ladydi = void 0;
+var personajes_1 = require("./Personajes");
 var ladydi = /** @class */ (function (_super) {
     __extends(ladydi, _super);
     function ladydi(nombre, nivel, habilidades, vida, fuerza, cantoDeSirena, danceFeghting) {

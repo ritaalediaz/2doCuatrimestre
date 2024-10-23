@@ -16,7 +16,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.mago = void 0;
-var personajes_1 = require("./personajes");
+var personajes_1 = require("./Personajes");
 //  const defVarita= "hsjsjs";
 var mago = /** @class */ (function (_super) {
     __extends(mago, _super);

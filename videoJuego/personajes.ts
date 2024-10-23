@@ -1,3 +1,15 @@
+/* un sistema de personajes de un videojuego RPG utilizando herencia y polimorfismo. Los personajes tendrán
+características y habilidades únicas, y algunos podrán evolucionar a versiones mejoradas con nuevas habilidades.
+Ejercicio videojuego
+Ejemplo de clase base personaje
+El personaje debe tener atributos ej:nombre (string): El nombre del personaje.
+nivel (number): El nivel del personaje (empieza en 1).
+puntosDeVida (number): Los puntos de vida del personaje.
+Métodos ej:
+atacar(): Imprime un mensaje indicando que el personaje está atacando.
+defender(): Imprime un mensaje indicando que el personaje está defendiendo.
+Ejercicio videojuego*/
+
 
 export abstract class Personajes {
     protected nombre: string;
@@ -55,6 +67,7 @@ public atacarEnemigo():void{
 public defenderse():void{
     return console.log("se esta defendiendo del enemigo")
 }
+public evolucionar():void{  
+    return console.log("evolucion del personaje")
 }
-
-
+}

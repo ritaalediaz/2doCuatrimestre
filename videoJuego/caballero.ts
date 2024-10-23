@@ -1,5 +1,5 @@
-import { Personajes } from "./personajes";
-export class caballero extends Personajes {
+import { Personajes } from "./Personajes";
+export class Caballero extends Personajes {
     
     private ataqueEspada: number;
     private defEescudo: string;
@@ -9,12 +9,12 @@ export class caballero extends Personajes {
         this.defEescudo= "escudo potente"
     }
     // Atacar
-    atacar(): void {
+    public atacar(): void {
         console.log(`${this.nombre} ataca con ${this.ataqueEspada} a El Mago Gandalf y causa ${this.fuerza} de daño`);
      }
       
     //Defender 
-    defender(): void {
+    public defender(): void {
         console.log(`${this.nombre} se protege con su escudo potente.`);
     }
    public getdefEescudo(): string {

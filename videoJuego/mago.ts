@@ -1,6 +1,6 @@
 
-import { Personajes } from "./personajes";
- export class mago extends Personajes {
+import { Personajes } from "./Personajes";
+ export class Mago extends Personajes {
 
  private cantidadHechizos: number;
  private defVarita: string;
@@ -9,10 +9,13 @@ import { Personajes } from "./personajes";
          this.cantidadHechizos = 5;
         this.defVarita= "Convierte en sapo"
     }
-    atacar(): void {
+   public atacar(): void {
       console.log(`${this.nombre} lanza ${this.cantidadHechizos}  a Conan y causa ${this.fuerza} daño`);
     }
-    defender(): void {
+    public defender(): void {
       console.log(`${this.nombre} se protege con su magia.`);
+    }
+  public evolucionar(): void {
+    console.log(`${this.nombre} evoluciona a Mago Legendario.`);
     }
 }
