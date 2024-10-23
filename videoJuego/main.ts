@@ -24,11 +24,19 @@ juego.iniciarJuego();
 console.log("El Caballero está preparado para atacar\n")
 console.log("El Caballero evolucionó")
 console.log(Caballero);
-
 caballero.setdefEescudo("escudo mágico")
 caballero.setNivel(2)
 console.log(Caballero)
 console.log ("!Nivel y arma cambiado con exito¡\n")
+
+mago.atacar();
+console.log("El Mago está preparado para atacar\n")
+console.log("El Mago ataca con su hechizos")
+console.log(Mago)
+mago.defender();
+console.log("El Mago está preparado para defenderse\n")
+console.log("El Mago se protege con su magia")
+console.log(Mago)
 
 magoMejorado.evolucionar();
 console.log("El mago esta preparado para evolucionar a Mago Legendario")
