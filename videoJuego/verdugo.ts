@@ -1,5 +1,5 @@
-import { Personajes } from "./personajes";
-export class verdugo extends Personajes {
+import { Personajes } from "./Personajes";
+export class Verdugo extends Personajes {
 
   private elementosTortura: number;
   private hachaDeVerdugo: string;
@@ -8,10 +8,10 @@ export class verdugo extends Personajes {
           this.elementosTortura = 5;
          this.hachaDeVerdugo= "hacha de verdugo"
      }
-  atacar(): void {
+  public atacar(): void {
         console.log(`${this.nombre} ataca con elementos de tortura ${this.elementosTortura} al caballero Conan y causa ${this.fuerza} de daño`);
       }
-  defender(): void {
+  public defender(): void {
         console.log(`${this.nombre} se defendió con su hacha de verdugo.`);
       }
 }

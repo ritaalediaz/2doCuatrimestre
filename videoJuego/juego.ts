@@ -1,4 +1,4 @@
-import { Personajes } from "./personajes";
+import { Personajes } from "./Personajes";
 export class Juego {
     private personajes: Personajes[];
     public constructor() {

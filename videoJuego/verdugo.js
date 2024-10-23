@@ -16,7 +16,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.verdugo = void 0;
-var personajes_1 = require("./personajes");
+var personajes_1 = require("./Personajes");
 var verdugo = /** @class */ (function (_super) {
     __extends(verdugo, _super);
     function verdugo(nombre, nivel, habilidades, vida, fuerza, elementosTortura, hachaDeVerdugo) {

@@ -15,11 +15,11 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.caballero = void 0;
-var personajes_1 = require("./personajes");
-var caballero = /** @class */ (function (_super) {
-    __extends(caballero, _super);
-    function caballero(nombre, nivel, habilidades, vida, fuerza, ataqueEspada, escudo) {
+exports.Caballero = void 0;
+var personajes_1 = require("./Personajes");
+var Caballero = /** @class */ (function (_super) {
+    __extends(Caballero, _super);
+    function Caballero(nombre, nivel, habilidades, vida, fuerza, ataqueEspada, escudo) {
         if (nivel === void 0) { nivel = 1; }
         var _this = _super.call(this, nombre, nivel, habilidades, vida, fuerza) || this;
         _this.ataqueEspada = 10;
