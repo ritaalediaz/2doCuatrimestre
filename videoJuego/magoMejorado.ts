@@ -1,10 +1,12 @@
-import { Personajes } from "./Personajes";
- export class MagoMejorado extends Personajes {
 
+import {Mago} from "./mago";
+
+ export class MagoMejorado extends Mago {
  private hechizosConLosCuatroElementos: number;
  private defenderseConMagia: string;
- public constructor(nombre: string, nivel: number = 1, habilidades: string,vida:100,fuerza:number, hechizosConLosCuatroElementos: number, defenderseConMagia: string) {
-        super(nombre, nivel, habilidades,vida,fuerza);
+ public constructor(nombre: string, nivel: number = 1, habilidades: string,vida:100,fuerza:number,cantidadHechizos: number,defVarita: string, hechizosConLosCuatroElementos: number, defenderseConMagia: string) {
+        super(nombre, nivel, habilidades,vida,fuerza,cantidadHechizos,defVarita);
+      
          this.hechizosConLosCuatroElementos = 4;
          this.defenderseConMagia= "Magia con los cuatro elementos:Agua-Fuego-Aire-Tierra"
     }
