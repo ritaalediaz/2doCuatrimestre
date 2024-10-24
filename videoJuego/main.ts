@@ -12,7 +12,7 @@ let mago:Mago = new Mago("Gandalf", 1, "Hechizos",100,5,30,"convertir en sapo");
 let caballero:Caballero = new Caballero("Conan", 1,"Fuerza Física",100,10,20,"Escudo Potente");
 let verdugo:Verdugo = new Verdugo("Legolas", 1, "Tortura",100,5,40,"hacha de verdugo" );
 let ladydi:Ladydi = new Ladydi("Diana", 1, "Voz Destructiva" ,100,7,25,"baile de lucha");
-let magoMejorado:MagoMejorado = new MagoMejorado("Gandalf", 1, "Hechizos con los cuatro elementos",100,4,50,"Magia con los cuatro elementos:Agua-Fuego-Aire-Tierra");
+let magoMejorado:MagoMejorado = new MagoMejorado("Gandalf", 1, "Hechizos con los cuatro elementos",100,4,50,"convertir en sapo",4,"Magia con los cuatro elementos:Agua-Fuego-Aire-Tierra");
 
 juego.agregarPersonaje(caballero);
 juego.agregarPersonaje(mago);
